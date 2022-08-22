@@ -1,4 +1,4 @@
-# goStudy
+# 产品经理学Go语言
 ## This is an example of notebooks for reading a book teaching golang.
 
 gopls was not able to find modules in your workspace.
