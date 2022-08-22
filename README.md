@@ -1,5 +1,5 @@
 # goStudy
-## This is an example of notebooks for reading a book of golang.
+## This is an example of notebooks for reading a book teaching golang.
 
 gopls was not able to find modules in your workspace.
 When outside of GOPATH, gopls needs to know which modules you are working on.
