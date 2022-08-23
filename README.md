@@ -1,5 +1,6 @@
-# 产品经理学Go
-## This is an example of notebooks for reading a book teaching golang.
+# A Product Managers playing with Go
+### This project is about reading Go learning books.
+
 
 gopls was not able to find modules in your workspace.
 When outside of GOPATH, gopls needs to know which modules you are working on.
