@@ -2,13 +2,23 @@ package main
 
 import (
 	"fmt"
+	"log"
 
-	"kensoft.tech/go-study/function"
+	"kensoft.tech/go-lib/greetings"
 )
 
 func main() {
-	mult2 := function.MakeMult(2)
-	mult5 := function.MakeMult(5)
-	fmt.Println(mult2(10), mult5(10))
 
+	log.SetPrefix("greetings: ")
+	log.SetFlags(0)
+
+	names := []string{"ken", "mei", "jia", "tai"}
+	ms, err := greetings.Hellos(names)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+	for _, v := range ms {
+		fmt.Println(v)
+	}
 }
