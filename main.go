@@ -1,24 +1,22 @@
 package main
 
 import (
-	"fmt"
-	"log"
-
-	"kensoft.tech/go-lib/greetings"
+	"math/rand"
+	"time"
 )
 
+func init() {
+	rand.Seed(time.Now().UnixNano())
+}
+
 func main() {
+	// function.PrintHellos([]string{"mei", "ken"})
 
-	log.SetPrefix("greetings: ")
-	log.SetFlags(0)
+	// r := function.RandString(10)
+	// fmt.Println(r)
+	// fmt.Println(function.ToUpper(r))
 
-	names := []string{"ken", "mei", "jia", "tai"}
-	ms, err := greetings.Hellos(names)
+	// s := function.RandSeq(10)
+	// fmt.Println(s)
 
-	if err != nil {
-		log.Fatal(err)
-	}
-	for _, v := range ms {
-		fmt.Println(v)
-	}
 }
