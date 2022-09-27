@@ -19,4 +19,16 @@ func main() {
 	// s := function.RandSeq(10)
 	// fmt.Println(s)
 
+	// fmt.Println(function.ProcessStr("asdfasdf", 12))
+
+	/*
+		in := [3]string{"a", "b", "c"}
+		var out []*string
+		for _, v := range in {
+			v := v
+			out = append(out, &v)
+		}
+		fmt.Println(*out[0], *out[1], *out[2])
+	*/
+
 }
