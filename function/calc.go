@@ -57,3 +57,13 @@ func Calc() {
 		fmt.Println(result)
 	}
 }
+
+// 欧几里得最大公约数算法
+func GCD(a int, b int) int {
+	if b == 0 {
+		return a
+	}
+	c := a % b
+	return GCD(b, c)
+
+}
