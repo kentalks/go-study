@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"kensoft.tech/go-lib/util"
+	util "kensoft.tech/go-lib"
 )
 
 func PrintHellos(names []string) {
