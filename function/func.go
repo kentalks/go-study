@@ -6,7 +6,7 @@ import (
 )
 
 func Div(num, den int) (res int, rem int, err error) {
-	if 0 == den {
+	if den == 0 {
 		return 0, 0, errors.New("devide 0")
 	}
 	return num / den, num % den, nil
