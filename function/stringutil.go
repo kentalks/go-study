@@ -1,8 +1,6 @@
 package function
 
-import (
-	"kensoft.tech/go-lib/util"
-)
+import util "kensoft.tech/go-lib"
 
 func ToUpper(s string) string {
 	return util.ToUpper(s)
