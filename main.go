@@ -23,7 +23,7 @@ func main() {
 
 		c := make(chan int)
 		for i := 0; i < 5; i++ {
-			worker := &function.Worker{Id: i}
+			worker := &utils.Worker{Id: i}
 			go worker.Process(c)
 		}
 		for {
@@ -60,7 +60,7 @@ func main() {
 		fmt.Println("done")
 	*/
 	/*
-		if err := function.Process(2); err != nil {
+		if err := utils.Process(2); err != nil {
 			fmt.Println(err)
 		}
 	*/
@@ -79,17 +79,17 @@ func main() {
 		}
 	*/
 
-	//fmt.Println(function.PriceCheck(1))
-	//function.HelloMap()
-	//function.HelloSlice()
+	//fmt.Println(utils.PriceCheck(1))
+	//utils.HelloMap()
+	//utils.HelloSlice()
 
-	//function.HelloArray()
+	//utils.HelloArray()
 	/*
-		cat := function.Cat{
+		cat := utils.Cat{
 			Age: 0,
-			Pet: &function.Pet{Name: "小白"},
+			Pet: &utils.Pet{Name: "小白"},
 		}
-		function.Super(&cat)
+		utils.Super(&cat)
 		fmt.Println(cat.Age)
 		(&cat).Super()
 		fmt.Println(cat.Age)
@@ -98,16 +98,16 @@ func main() {
 	*/
 	//cat.Info()
 
-	//function.PrintHellos([]string{"mei", "ken"})
+	//utils.PrintHellos([]string{"mei", "ken"})
 
-	// r := function.RandString(10)
+	// r := utils.RandString(10)
 	// fmt.Println(r)
-	// fmt.Println(function.ToUpper(r))
+	// fmt.Println(utils.ToUpper(r))
 
-	// s := function.RandSeq(10)
+	// s := utils.RandSeq(10)
 	// fmt.Println(s)
 
-	// fmt.Println(function.ProcessStr("asdfasdf", 12))
+	// fmt.Println(utils.ProcessStr("asdfasdf", 12))
 
 	/*
 		in := [3]string{"a", "b", "c"}
@@ -120,7 +120,7 @@ func main() {
 	*/
 
 	/*
-		fmt.Println(function.GCD(-6, 18))
+		fmt.Println(utils.GCD(-6, 18))
 	*/
 
 }

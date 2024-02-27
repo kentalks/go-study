@@ -1,4 +1,4 @@
-package function
+package utils
 
 import util "kensoft.tech/go-lib"
 
